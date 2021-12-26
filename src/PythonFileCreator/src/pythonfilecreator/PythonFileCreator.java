@@ -5,6 +5,7 @@
  */
 package pythonfilecreator;
 
+import compiler.AssetManager;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -50,6 +51,9 @@ public class PythonFileCreator extends Application {
         section_1.getChildren().add(variable_view.getDisplay());
         
         root.getChildren().addAll(section_1);
+        
+        AssetManager manager = new AssetManager(section_view, variable_view);
+        manager.initialize();
         
         Scene scene = new Scene(root, window_width, window_height);
        

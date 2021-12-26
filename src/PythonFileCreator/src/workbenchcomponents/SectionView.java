@@ -5,6 +5,7 @@
  */
 package workbenchcomponents;
 
+import compiler.AssetManager;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
@@ -37,6 +38,10 @@ public class SectionView {
     private final VBox button_area;
     private final Button add_section_button;
     
+    
+    private AssetManager manager;
+    
+    
     public SectionView(double window_width, double window_height) {
         content = new VBox();
         
@@ -64,6 +69,10 @@ public class SectionView {
         applyDefaultStyle();
         
         content.getChildren().addAll(header_area, sections_view, button_area);
+    }
+    
+    public void assignManager(AssetManager manager) {
+        this.manager = manager;
     }
     
     public VBox getDisplay() { return content; }

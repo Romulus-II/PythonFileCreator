@@ -70,7 +70,7 @@ public class SectionView {
     
     private void applyDefaultStyle() {
         content.setStyle("-fx-background-color: #00ccff; -fx-text-fill: white;");
-        sections.setStyle("-fx-background-color: #99ebff; -fx-text-fill: black;");
+        sections.setStyle("-fx-background-color: #00ccff; -fx-text-fill: white;");
         header.setFont(Font.font ("Times New Roman", 14));
         header.setFill(Color.WHITE);
     }

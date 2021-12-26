@@ -45,7 +45,7 @@ public class PythonFileCreator extends Application {
         VBox section_1 = new VBox();
      
         SectionView section_view = new SectionView(window_width, window_height);
-        section_1.getChildren().add(section_view.getView());
+        section_1.getChildren().add(section_view.getDisplay());
         VariableView variable_view = new VariableView(window_width, window_height);
         section_1.getChildren().add(variable_view.getView());
         
